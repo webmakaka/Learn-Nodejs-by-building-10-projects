@@ -3,7 +3,11 @@ extends layout
 block content
   h1 Register
   p Please register using the form below
-  form(method='post', action='users/register',endtype='multipart/form-data')
+  ul.errors
+        if errors
+                each error, i in errors
+                    li.alert.alert-danger #{error.msg}
+  form(method='post', action='/users/register',endtype='multipart/form-data')
       .form-group
           label Name
           input.form-control(name='name', type='text', placeholder='Enter Name')

@@ -73,4 +73,7 @@ Installation MongoDB on windows
 
 
 004 Views  Layouts Part A  
+
 005 Views and Layouts Part B  
+
+006 User Registration PART-A

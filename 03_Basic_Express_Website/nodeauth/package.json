@@ -18,7 +18,7 @@
     "mongodb": "^2.0.43",
     "mongoose": "^4.1.8",
     "morgan": "~1.6.1",
-    "multer": "^1.0.5",
+    "multer": "^0.1.8",
     "passport": "^0.3.0",
     "passport-http": "^0.3.0",
     "passport-local": "^1.0.0",
