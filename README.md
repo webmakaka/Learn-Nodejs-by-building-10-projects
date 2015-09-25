@@ -53,7 +53,7 @@ Installation MongoDB on windows
     > db.users.update({username:"devuser1"},{$set:{email:"devuser1@gmail.com"}});
 
 
-003 Application  Middleware Setup
+003 Application Middleware Setup
 
     $ mikdir -p nodeauth
     $ cd nodeauth
@@ -70,3 +70,9 @@ Installation MongoDB on windows
     $ npm install
 
     $ npm start
+
+
+004 Views  Layouts Part A
+
+
+    
