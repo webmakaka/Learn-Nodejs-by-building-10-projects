@@ -77,3 +77,10 @@ Installation MongoDB on windows
 005 Views and Layouts Part B  
 
 006 User Registration PART-A
+
+007 User Registration PART-B
+
+    $ mongo
+    > use nodeauth
+    > db.users.find().pretty();
+    > db.users.remove({})
