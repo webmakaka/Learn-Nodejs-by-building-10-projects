@@ -72,7 +72,5 @@ Installation MongoDB on windows
     $ npm start
 
 
-004 Views  Layouts Part A
-
-
-    
+004 Views  Layouts Part A  
+005 Views and Layouts Part B  
