@@ -84,3 +84,10 @@ Installation MongoDB on windows
     > use nodeauth
     > db.users.find().pretty();
     > db.users.remove({})
+
+008 Password Encryption with Bcrypt
+
+Installation componetns for windows (Open SSL)
+
+    $ npm install --save node-gyp
+    $ npm install --save bcrypt
