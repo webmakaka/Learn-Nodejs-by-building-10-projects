@@ -1,5 +1,5 @@
 # Learn-Nodejs-by-building-10-projects
-[Udemy] Learn Nodejs by building 10 projects [2015, ENG]
+[Eduonix] Learn Nodejs by building 10 projects [2015, ENG]
 
 <br/>
 
@@ -29,8 +29,9 @@
 
 004 Nodemailer Setup
 
-To send you should login to gmail
+To send emails you should be logged in  gmail
 
+<br/>
 
 ### 04 User Login System
 
@@ -91,3 +92,7 @@ Installation componetns for windows (Open SSL)
 
     $ npm install --save node-gyp
     $ npm install --save bcrypt
+
+009 User Authentication with Passport
+
+    
