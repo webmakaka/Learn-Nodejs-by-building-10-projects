@@ -96,3 +96,5 @@ Installation componetns for windows (Open SSL)
 009 User Authentication with Passport
 
 010 Logout Access Control Part A
+
+011 Logout  Access Control Part B
