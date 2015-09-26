@@ -1,8 +1,28 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family:arial;
 }
 
 a {
   color: #00B7FF;
+}
+
+ul.success li, ul.info li, ul.error li{
+    margin: 20px 0 20px 0;
+    padding:15px;
+    border: 1px solid transparent;
+    border-radius:5px;
+    list-style: none;
+}
+
+ul.success li{
+    color:#3c763d;
+    background:#dff0d8;
+    border-color:#d6e9c6;
+}
+
+ul.error li{
+    color:#31708f;
+    background:#FF8080;
+    border-color:#bce8f1;
 }
