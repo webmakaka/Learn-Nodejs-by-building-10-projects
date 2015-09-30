@@ -67,7 +67,7 @@ Installation MongoDB on windows
     $ npm install --save passport
     $ npm install --save passport-local
     $ npm install --save passport-http
-    $ npm install --save multer
+    $ npm install --save multer@0.1.8
     $ npm install
 
     $ npm start
@@ -98,3 +98,32 @@ Installation componetns for windows (Open SSL)
 010 Logout Access Control Part A
 
 011 Logout  Access Control Part B
+
+
+<br/>
+
+### 05 Node Blog System
+
+002 Modules, Middleware  Template Part A
+
+    $ express nodeblog
+    $ cd nodeblog/
+    $ npm install --save mongodb
+    $ npm install --save monk
+    $ npm install --save connect-flash
+    $ npm install --save express-validator
+    $ npm install --save express-session
+    $ npm install --save express-messages
+    $ npm install --save multer@0.1.8
+    $ npm install --save moment
+    $ npm install
+
+    $ mkdir public/images/uploads
+
+    $ mongo
+    > use nodeblog
+
+    > db.createCollection('posts');
+    > db.createCollection('categories');
+
+    $ npm start
