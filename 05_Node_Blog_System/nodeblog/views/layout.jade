@@ -1,8 +1,20 @@
 doctype html
 html
-  head
-    title NodeBlog
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-      .container
+    head
+        title NodeBlog
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+        .container
+            img.logo(src='/images/node-blog-logo.png')
+            nav
+              ul
+                  li
+                      a(href='/') Home
+                  li
+                      a(href='/posts/add') Add Post
+                  li
+                      a(href='/categories/add') Add Category
+            != messages()
             block content
+            footer
+              p NodeBlog &copy; 2015
