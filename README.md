@@ -149,4 +149,14 @@ Installation componetns for windows (Open SSL)
 
 006 Adding Posts PART -A
 
-    $ npm start
+007 Adding Posts PART -B
+
+    $ mongo
+    > use nodeblog
+
+    > db.categories.insert({title:"Technology"})
+    > db.categories.insert({title:"Fasion"})
+
+<br/>
+
+    Web Text Editor - http://ckeditor.com/ (Version 4.5.3)

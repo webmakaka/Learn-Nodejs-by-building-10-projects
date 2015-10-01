@@ -6,13 +6,15 @@ block content
         if errors
             each error, i in errors
                 li.alert.alert-danger #{error.msg}
-    form(method='post', action='post/add', enctype="multipart/form-data")
+    form(method='post', action='/posts/add', enctype="multipart/form-data")
         .form-group
             label Title:
             input.form-control(name='title', type='text')
         .form-group
             label Category:
-            input.form-control(name='category')        
+            select.form-control(name='category')     
+                each category, i in categories
+                    option(value='#{category.title}') #{category.title}
         .form-group
             label Body:
             textarea.form-control(name='body', id='body')  
@@ -25,3 +27,7 @@ block content
                 option(value='Brad Traversy') Brad Travers
                 option(value='John Doe') John Doe
         input.btn.btn-default(name='submit', type='submit', value='Save')
+        script(src='/ckeditor/ckeditor.js')
+        script
+            | CKEDITOR.replace('body');
+            
