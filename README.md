@@ -140,3 +140,7 @@ Installation componetns for windows (Open SSL)
     > db.posts.insert({title:"Blog Post Two", category: "Fasion", author:"John Doe", body:"This is the body for a fasion post", date: ISODate()})
 
     > db.posts.find().pretty()
+
+    $ npm start
+
+005 Homepage Blog Posts Part B
