@@ -159,4 +159,10 @@ Installation componetns for windows (Open SSL)
 
 <br/>
 
-    Web Text Editor - http://ckeditor.com/ (Version 4.5.3)
+Web Text Editor - http://ckeditor.com/ (Version 4.5.3)
+
+    $ npm start
+
+008 Adding Categories
+
+    $ npm start

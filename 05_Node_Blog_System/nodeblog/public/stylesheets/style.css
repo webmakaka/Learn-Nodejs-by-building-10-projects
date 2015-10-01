@@ -104,10 +104,36 @@ input[type='text'], select, textarea{
 }
 
 select{
-    height:30px; 
+    height:30px;
 }
 
 textarea{
     height:70px;
     width:400px;
+}
+
+.alert{
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    list-style: none;
+}
+
+.alert-danger{
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+ul.success li{
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    list-style: none;
 }
