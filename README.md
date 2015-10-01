@@ -129,4 +129,14 @@ Installation componetns for windows (Open SSL)
     $ npm start
 
 
-003 Modules, Middleware  Template Part B
+003 Modules, Middleware Template Part B
+
+004 Homepage Blog Posts Part A
+
+    $ mongo
+    > use nodeblog
+
+    > db.posts.insert({title:"Blog Post One", category: "Technology", author:"Brad Traversy", body:"This is the body", date: ISODate()})
+    > db.posts.insert({title:"Blog Post Two", category: "Fasion", author:"John Doe", body:"This is the body for a fasion post", date: ISODate()})
+
+    > db.posts.find().pretty()

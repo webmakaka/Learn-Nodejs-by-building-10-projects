@@ -1,5 +1,7 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    if posts
+        each post, i in posts
+            h1=post.title
+            p.meta Posted in #{post.category} by #{post.author} on #{post.date}
