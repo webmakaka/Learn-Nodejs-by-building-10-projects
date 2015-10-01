@@ -144,3 +144,9 @@ Installation componetns for windows (Open SSL)
     $ npm start
 
 005 Homepage Blog Posts Part B
+
+    $ npm start
+
+006 Adding Posts PART -A
+
+    $ npm start

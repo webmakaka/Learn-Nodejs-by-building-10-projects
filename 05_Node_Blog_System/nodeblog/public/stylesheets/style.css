@@ -85,3 +85,29 @@ a.more{
     border-bottom:1px solid #ccc;
     padding-bottom:20px;
 }
+
+input, select, textarea{
+    margin-bottom:15px;
+
+}
+
+label{
+    display:inline-block;
+    width:100px;
+}
+
+input[type='text'], select, textarea{
+    padding:3px;
+    height:20px;
+    width:200px;
+    border:1px #ccc solid;
+}
+
+select{
+    height:20px;
+}
+
+textarea{
+    height:70px;
+    width:400px;
+}
