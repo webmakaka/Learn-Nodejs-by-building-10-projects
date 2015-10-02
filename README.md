@@ -211,3 +211,22 @@ https://github.com/jedireza/drywall/
     $ cp config.example.js config.js
     $ vi config.js
     $ grunt
+
+003 MongoLab  Drywall Setup Part B
+
+    $ mongo ds027744.mongolab.com:27744/comevents -u user1 -p user1
+    rs-ds027744:PRIMARY> use comevents
+
+    db.admingroups.insert({ _id: 'root', name: 'Root' });
+    db.admins.insert({ name: {first: 'Root', last: 'Admin', full: 'Root Admin'}, groups: ['root'] });
+    var rootAdmin = db.admins.findOne();
+    db.users.save({ username: 'root', isActive: 'yes', email: 'your@email.addy', roles: {admin: rootAdmin._id} });
+    var rootUser = db.users.findOne();
+    rootAdmin.user = { id: rootUser._id, name: rootUser.username };
+    db.admins.save(rootAdmin);
+
+    db.users.update({email:'your@email.addy'}, {$set: {email:'your_email@gmail.com'}})
+
+
+reset password  
+http://localhost:3000/login/forgot/
