@@ -33,7 +33,7 @@ router.post('/add', function(req, res, next){
     var category = req.body.category;
     var body     = req.body.body;
     var author   = req.body.author;
-    var data     = new Date();
+    var date     = new Date();
 
     if(req.files.mainimage){
         var mainImageOriginalName = req.files.mainimage.originalname;
@@ -69,7 +69,7 @@ router.post('/add', function(req, res, next){
             "title": title,
             "body": body,
             "category": category,
-            "data": data,
+            "date": date,
             "author": author,
             "image": mainImageName
         }, function(err, post){
@@ -89,6 +89,65 @@ router.post('/add', function(req, res, next){
     req.checkBody('username','Username field is required').notEmpty();
     req.checkBody('password','Password field is required').notEmpty();
     req.checkBody('password2','Password do not match').equals(req.body.password);
+
+});
+
+
+router.post('/addcomment', function(req, res, next){
+    // Ger form values
+    var name          = req.body.name;
+    var email         = req.body.email;
+    var body          = req.body.body;
+    var postid        = req.body.postid;
+    var commentdate   = new Date();
+
+    // Form Validation
+
+    req.checkBody('name', 'Name field is required').notEmpty();
+    req.checkBody('email', 'Email field is required').notEmpty();
+    req.checkBody('email', 'Email is not formatted correctly').isEmail();
+    req.checkBody('body','Body field is required').notEmpty();
+
+    // Check Errors
+
+    var errors = req.validationErrors();
+
+    if(errors){
+        var posts = db.get('posts');
+        potsts.findById(postid, function(err, post){
+            res.render('show', {
+                "erors": errors,
+                "post": post
+            });
+        });
+
+    } else {
+        var comment = {
+            "name": name,
+            "email": email,
+            "body": body,
+            "commentdate": commentdate
+        };
+
+        var posts = db.get('posts');
+
+        posts.update({
+            "_id": postid
+        },{
+            $push:{
+                "comments": comment
+            }
+        }, function(err, doc){
+            if(err){
+                throw err;
+            } else {
+                req.flash('success', 'Comment Added');
+                res.location('/posts/show/'+postid);
+                res.redirect('/posts/show/'+postid);
+            }
+        });
+
+    }
 
 });
 

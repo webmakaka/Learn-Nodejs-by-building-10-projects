@@ -182,3 +182,7 @@ http://lipsum.com/
 010 Single Posts Comments Part A
 
     $ npm start
+
+011 Single Posts Comments Part B
+
+    $ npm start
