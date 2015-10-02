@@ -186,3 +186,28 @@ http://lipsum.com/
 011 Single Posts Comments Part B
 
     $ npm start
+
+
+<br/>
+
+### 06 Community Events
+
+002 MongoLab Drywall Setup Part A
+
+mongolab.com
+
+create new database: comevents
+create a new user:
+
+
+    # npm install -g grunt-cli
+
+https://github.com/jedireza/drywall/
+
+    $ git clone https://github.com/jedireza/drywall/  comevents
+    $ cd comevents/
+    $ npm install
+
+    $ cp config.example.js config.js
+    $ vi config.js
+    $ grunt
