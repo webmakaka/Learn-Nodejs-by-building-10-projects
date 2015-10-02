@@ -101,7 +101,7 @@ label{
     width:100px;
 }
 
-input[type='text'], select, textarea{
+input[type='text'], input[type='email'], select, textarea{
     padding:3px;
     height:20px;
     width:200px;
