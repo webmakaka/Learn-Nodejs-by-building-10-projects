@@ -1,0 +1,32 @@
+extends ../../layouts/default
+
+block head
+  title #{event.name}
+
+block body
+  div.row
+    div.col-sm-8
+        div.page-header
+            h1 #{event.name}
+                small &nbsp; Posted by #{event.username}
+        ul.event-list
+            li
+                strong Venu: 
+                | #{event.venu}
+            li
+                strong Date: 
+                | #{event.date}
+            li
+                strong Start Time: 
+                | #{event.startTime}
+            li
+                strong End Time: 
+                | #{event.endTime}
+        p #{event.description}
+        p
+            i.fa.fa-arrow-circle-left
+            a(href='/events')  Go Back
+                
+    div.col-sm-4
+        div.page-header
+            h1 Sidebar

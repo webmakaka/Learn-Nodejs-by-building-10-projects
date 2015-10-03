@@ -3,3 +3,28 @@
     margin:20px 0;
     line-height: 1.9em;
 }
+
+ul.error li, ul.info li, ul.success li{
+    margin:20px 0 20px 0;
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    list-style: none;
+}
+ul.error li{
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+ul.info li{
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+ul.success li{
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e8c6;
+}

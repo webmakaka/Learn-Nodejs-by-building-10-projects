@@ -23,10 +23,15 @@ html
             li: a(href='/') Home
             li: a(href='/about/') About
             li: a(href='/events/') Events
-            li: a(href='/signup/') Sign Up
             li: a(href='/contact/') Contact
           ul.nav.navbar-nav.navbar-right
             if user && user.username
+              li: a(href='/myevents') 
+                i.fa.fa-calendar
+                |  My Events
+              li: a(href='/events/add') 
+                i.fa.fa-plus
+                |  Add Event                   
               li: a(href='#{user.defaultReturnUrl}')
                 i.fa.fa-user
                 |  #{user.username}
@@ -37,6 +42,7 @@ html
 
     div.page
       div.container
+        != messages()
         block body
 
     div.footer

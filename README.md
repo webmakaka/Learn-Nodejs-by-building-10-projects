@@ -256,4 +256,16 @@ http://localhost:3000/login/forgot/
     	"username" : "brad"
     }
 
-    
+<br/>
+
+    $ grunt
+
+
+006 Details Page Adding Events
+
+007 Details Page Adding Events Part B
+
+    $ npm install --save connect-flash
+    $ npm install --save express-messages
+
+    $ grunt
