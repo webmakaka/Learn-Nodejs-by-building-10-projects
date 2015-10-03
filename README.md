@@ -233,3 +233,27 @@ http://localhost:3000/login/forgot/
 
 
 004 Event Schema Frontend Display Part A
+
+005 Event Schema Frontend Display Part B
+
+
+    $ mongo ds027744.mongolab.com:27744/comevents -u user1 -p user1
+    rs-ds027744:PRIMARY> use comevents
+    rs-ds027744:PRIMARY> show collections
+    rs-ds027744:PRIMARY> db.createCollection('events');
+
+    rs-ds027744:PRIMARY> db.events.insert({name:'Event One', description:'This is the description', date:new Date('July 04,2015'), venu: 'Venu One', startTime:'2:00pm', endTime:'5:00pm', username:'brad'})
+
+    rs-ds027744:PRIMARY> db.events.find().pretty();
+    {
+    	"_id" : ObjectId("560fbefca828926163531a0f"),
+    	"name" : "Event One",
+    	"description" : "This is the description",
+    	"date" : ISODate("2015-07-04T00:00:00Z"),
+    	"venu" : "Venu One",
+    	"startTime" : "2:00pm",
+    	"endTime" : "5:00pm",
+    	"username" : "brad"
+    }
+
+    

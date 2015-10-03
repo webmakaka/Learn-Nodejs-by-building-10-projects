@@ -1,0 +1,5 @@
+.events li{
+    list-style: none;
+    margin:20px 0;
+    line-height: 1.9em;
+}
