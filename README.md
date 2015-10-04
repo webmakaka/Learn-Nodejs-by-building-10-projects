@@ -269,3 +269,9 @@ http://localhost:3000/login/forgot/
     $ npm install --save express-messages
 
     $ grunt
+
+008 Edit and Delete Events
+
+009 Edit and Delete Events Part B
+
+    $ grunt
