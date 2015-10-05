@@ -3,18 +3,55 @@
     <head>
         <meta charset="utf-8" />
         <title>{+title /}</title>
-    
+
         <link rel="stylesheet" href="/css/app.css">
-    
+        <link rel="stylesheet" href="/css/foundation.css">
+        <link rel="stylesheet" href="/css/style.css">
+
     </head>
     <body>
-
-        <div id="wrapper">
-            {+body /}
+        <div class="row">
+            <div class="large-12 columns">
+                <h1>TekBooks</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-12 columns">
+                <nav class="top-bar" data-topbar role="navigation">
+                    <section class="top-bar-section">
+                        <ul class="left">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/pages/about">About</a></li>
+                            <li><a href="/cart">Cart</a></li>
+                        </ul>
+                    </section>
+                </nav>
+            </div>
         </div>
 
-    
+        <!-- Body -->
+        <div class="row">
+            <div class="large-12 columns">
+                {+body /}
+            </div>
+        </div>
+
+
+
+        <footer>
+            <div class="row">
+                <div class="large-12 columns">
+                    <p>TekBooks &copy; 2015 | <a href="/manage">Manage</a></p>
+                </div>
+            </div>
+        </footer>
+
         <script data-main="/js/app" src="/components/requirejs/require.js"></script>
-    
+        <script src="/js/vendor/jquery.js"></script>
+        <script src="/js/foundation.min.js"></script>
+        <script src="/js/main.js"></script>
+        <script>
+            $(document).foundation();
+        </script>
     </body>
 </html>
