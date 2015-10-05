@@ -1,0 +1,23 @@
+{>"layouts/master" /}
+
+{<body}
+    <div class="row">
+
+    <div class="large-4 columns">
+        <img src='/img/node1.jpg'>
+    </div>
+
+    <div class="large-8 columns">
+        <h2>Professional Node.js</h2>
+        <ul class="bookinfo">
+            <li>Category: Node.js</li>
+            <li>Author: John Doe</li>
+            <li>Publisher: Some Publisher</li>
+        </ul>
+        <br/>
+        <div class="price"><span>$19.99</span></div>
+        <br/>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <a class="button success">Add to Cart</a>
+    </div>
+{/body}

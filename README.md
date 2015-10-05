@@ -325,3 +325,7 @@ Download Complete
 
 
 003 Frontend Routes Templates Part A
+
+    $ npm start
+
+004 Frontend Routes Templates Part B
