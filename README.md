@@ -275,3 +275,50 @@ http://localhost:3000/login/forgot/
 009 Edit and Delete Events Part B
 
     $ grunt
+
+
+<br/>
+
+### 07 Bookstore (eCommerce)
+
+    Kraken Framework
+    MongoDB with Mongoose
+    Dust Templates
+    Custom Templating
+    PayPal Integration
+
+
+002 Kraken Setup
+
+krakenjs.com
+
+    # npm install -g yo generator-kraken bower grunt-cli
+    $ yo kraken
+
+
+    ? Name: TekBooks
+    ? Description: Simple shopping cart
+    ? Author: Brad Traversy
+    ? Template library? Dust (via Makara 2)
+    ? Include i18n support? Yes
+    ? Front end package manager ? Bower
+    ? CSS preprocessor library? LESS
+    ? JavaScript library? RequireJS
+
+    $ cd TekBooks/
+
+    $ npm install --save mongodb
+    $ npm install --save mongoose
+    $ npm install --save connect-flash
+    $ npm install --save express-messages
+
+    $ npm start
+
+    http://localhost:8000/
+
+
+Foundation
+
+http://foundation.zurb.com/
+
+Download Complete
