@@ -22,7 +22,7 @@
                         <ul class="left">
                             <li><a href="/manage">Dashboard</a></li>
                             <li><a href="/manage/books">Books</a></li>
-                            <li><a href="/manage/caegories">Caegories</a></li>
+                            <li><a href="/manage/categories">Categories</a></li>
                             <li><a href="/" target="_blank">View Website</a></li>
                         </ul>
                     </section>
@@ -36,8 +36,6 @@
                 {+body /}
             </div>
         </div>
-
-
 
         <footer>
             <div class="row">
