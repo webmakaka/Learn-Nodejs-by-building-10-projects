@@ -14,24 +14,15 @@
         </tr>
       </thead>
       <tbody>
+
+      {#categories}
         <tr>
-          <td>12345</td>
-          <td>Category Sample</td>
-          <td><a class="button tiny" href='/manage/categories/edit/1'>Edit</a></td>
+          <td>{._id}</td>
+          <td>{.name}td>
+          <td><a class="button tiny" href='/manage/categories/edit/{._id}'>Edit</a></td>
           <td><a class="button tiny alert removeCategory" href='#'>Delete</a></td>
         </tr>
-        <tr>
-          <td>12345</td>
-          <td>Category Sample</td>
-          <td><a class="button tiny" href='/manage/categories/edit/1'>Edit</a></td>
-          <td><a class="button tiny alert removeCategory" href='#'>Delete</a></td>
-        </tr>
-        <tr>
-          <td>12345</td>
-          <td>Category Sample</td>
-          <td><a class="button tiny" href='/manage/categories/edit/1'>Edit</a></td>
-          <td><a class="button tiny alert removeCategory" href='#'>Delete</a></td>
-        </tr>
+        {/categories}
       </tbody>
     </table>
 {/body}

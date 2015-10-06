@@ -345,3 +345,9 @@ Download Complete
 
 
 007 Display Data From MongoDB Part A
+
+008 Display Data From MongoDB Part B
+
+    $ mongo
+    > use tekbooks
+    > db.categories.insert({name:"NodeJS"});

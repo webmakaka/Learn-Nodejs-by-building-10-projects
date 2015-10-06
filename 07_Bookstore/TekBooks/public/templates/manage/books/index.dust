@@ -15,27 +15,15 @@
         </tr>
       </thead>
       <tbody>
+      {#books}
         <tr>
-          <td>12345</td>
-          <td>Book Sample</td>
-          <td>Some Category</td>
-          <td><a class="button tiny" href='/manage/books/edit/1'>Edit</a></td>
+          <td>{._id}</td>
+          <td>{.title}</td>
+          <td>{.category}</td>
+          <td><a class="button tiny" href='/manage/books/edit/{._id}'>Edit</a></td>
           <td><a class="button tiny alert removeBook" href='#'>Delete</a></td>
         </tr>
-        <tr>
-          <td>12345</td>
-          <td>Book Sample</td>
-          <td>Some Category</td>
-          <td><a class="button tiny" href='/manage/books/edit/1'>Edit</a></td>
-          <td><a class="button tiny alert removeBook" href='#'>Delete</a></td>
-        </tr>
-        <tr>
-          <td>12345</td>
-          <td>Book Sample</td>
-          <td>Some Category</td>
-          <td><a class="button tiny" href='/manage/books/edit/1'>Edit</a></td>
-          <td><a class="button tiny alert removeBook" href='#'>Delete</a></td>
-        </tr>
+        {/books}
       </tbody>
     </table>
 {/body}
