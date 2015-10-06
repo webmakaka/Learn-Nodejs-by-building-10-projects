@@ -2,6 +2,7 @@
 
 var express = require('express');
 var kraken = require('kraken-js');
+var flash = require('connect-flash');
 var db = require('./lib/db');
 
 
@@ -24,6 +25,14 @@ options = {
 
 app = module.exports = express();
 app.use(kraken(options));
+
+// Connect Flash
+app.use(flash());
+app.use(function(req, res, next){
+    res.locals.message = require('express-messages')(req,res);
+    next();
+});
+
 app.on('start', function () {
     console.log('Application ready to serve requests.');
     console.log('Environment: %s', app.kraken.get('env:env'));

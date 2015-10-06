@@ -32,6 +32,7 @@
         <!-- Body -->
         <div class="row">
             <div class="large-12 columns">
+                {messages|s}
                 {+body /}
             </div>
         </div>

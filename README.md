@@ -351,3 +351,8 @@ Download Complete
     $ mongo
     > use tekbooks
     > db.categories.insert({name:"NodeJS"});
+
+009 Admin CRUD Part A
+
+Now we could add new books  
+http://172.17.0.1:8000/manage/books/add
