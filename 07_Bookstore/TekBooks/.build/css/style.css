@@ -33,3 +33,7 @@ footer{
     padding:10px;
     text-align:center;
 }
+
+[class*="column"] + [class*="column"]:last-child{
+    float:left;
+}

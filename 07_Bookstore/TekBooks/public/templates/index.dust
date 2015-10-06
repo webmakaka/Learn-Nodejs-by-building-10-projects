@@ -3,47 +3,15 @@
 {<body}
 
     {#books}
-        {.title}
+    <div class="large-3 columns book">
+        <img src="/img/{.cover}">
+        <h4>{.title}</h4>
+        <p>
+            {.truncText}
+        </p>
+        <div class="price">Buy it for <span>${.price}</span></div>
+        <br/>
+        <a href="/books/details/{._id}" class="button small">Book Details</a>
+    </div>
     {/books}
-
-    <div class="large-3 columns book">
-        <img src="/img/node1.jpg">
-        <h4>Profession Node.js 1</h4>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate eros lobortis posuere fermentum. Morbi lobortis maximus gravida. In venenatis suscipit lacinia.
-        </p>
-        <div class="price">Buy it for <span>$19.99</span></div>
-        <br/>
-        <a href="/books/details/1" class="button small">Book Details</a>
-    </div>
-    <div class="large-3 columns book">
-        <img src="/img/node2.jpg">
-        <h4>Profession Node.js 2</h4>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate eros lobortis posuere fermentum. Morbi lobortis maximus gravida. In venenatis suscipit lacinia.
-        </p>
-        <div class="price">Buy it for <span>$29.99</span></div>
-        <br/>
-        <a href="/books/details/1" class="button small">Book Details</a>
-    </div>
-    <div class="large-3 columns book">
-        <img src="/img/node3.jpg">
-        <h4>Profession Node.js 3</h4>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate eros lobortis posuere fermentum. Morbi lobortis maximus gravida. In venenatis suscipit lacinia.
-        </p>
-        <div class="price">Buy it for <span>$39.99</span></div>
-        <br/>
-        <a href="/books/details/1" class="button small">Book Details</a>
-    </div>
-    <div class="large-3 columns book">
-        <img src="/img/node4.jpg">
-        <h4>Profession Node.js 4</h4>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate eros lobortis posuere fermentum. Morbi lobortis maximus gravida. In venenatis suscipit lacinia.
-        </p>
-        <div class="price">Buy it for <span>$49.99</span></div>
-        <br/>
-        <a href="/books/details/1" class="button small">Book Details</a>
-    </div>
 {/body}

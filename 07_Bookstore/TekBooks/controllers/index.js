@@ -10,6 +10,10 @@ module.exports = function (router) {
                 console.log(err);
             }
 
+            books.forEach(function(book){
+                book.truncText = book.truncText(50);
+            });
+
             var model = {
                 books: books
             };
