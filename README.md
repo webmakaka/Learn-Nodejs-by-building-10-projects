@@ -370,4 +370,12 @@ http://localhost:8000/manage/books/add
 Errors:  
 1) Flash Messages is not Show  
 2) When i tryind to add book without name or price, i get exception: uncaughtException Can't set headers after they are sent.  
-3) Summ total in order is not working
+3) Summ total in order is not working.
+
+
+
+<br/>
+
+### 08 ChatIO
+
+002 ChatIO User Interface

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ChatIO</title>
+        <style>
+            body{
+                background: #f9f9f9;
+            }
+
+            #container{
+                width:700px;
+                margin:0 auto;
+            }
+
+            #chatWindow{
+                height: 300px;
+            }
+
+            #mainWrapper{
+
+            }
+
+            #chatWrapper{
+                float:left;
+                border:1px #ccc solid;
+                border-radius: 10px;
+                background: #f4f4f4;
+                padding: 10px;
+            }
+
+            #userWrapper{
+                float: left;
+                border:1px #ccc solid;
+                border-radius: 10px;
+                background: #f4f4f4;
+                padding: 10px;
+                margin-left:20px;
+                width:150px;
+                max-height:200px;
+            }
+
+            #namesWrapper{
+                float: left;
+                border:1px #ccc solid;
+                border-radius: 10px;
+                background: #f4f4f4;
+                padding:10px;
+                margin-left:20px;
+                display:none;
+            }
+
+            input{
+                height:30px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="namesWrapper">
+                <h2>ChatIO</h2>
+                <p>Create Username:</p>
+                <form id="usernameForm">
+                    <input size="35" id="username">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+            <div id="mainWrapper">
+                <h2>ChatIO</h2>
+                <div id="chatWrapper">
+                    <div id="chatWindow"></div>
+                    <form id="messageForm">
+                        <input size="35" id="message" placeholder="Type Something...">
+                        <input type="submit" value="Say It!">
+                    </form>
+                </div>
+
+                <div id="userWrapper">
+                    <div id="users"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
