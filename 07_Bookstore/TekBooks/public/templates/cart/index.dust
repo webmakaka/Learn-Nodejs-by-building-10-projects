@@ -16,15 +16,16 @@
                             <th width="650">Item</th>
                             <th width="100">Quantity</th>
                             <th width="100">Total</th>
-                            <th width="100">Item</th>
+                            <th width="100"></th>
                         </tr>
                     </thead>
                     <tbody>
                         {#cart.items}
                             <tr>
-                                <td><a href="books/details/{._id}">{.title}</a></td>
+                                <td><a href="books/details/{.item}">{.title}</a></td>
                                 <td>{.qty}</td>
-                                <td>${@math key="{.price}" method="multiply" operand="{.qty}" /}</td>
+                                <td>${@math key="{.price}" method="multiply" operand="{.qty}" /}
+                                </td>
                                 <td></td>
                             </tr>
                         {/cart.items}
@@ -35,6 +36,33 @@
                         <h4>Total: <strong>${cart.total}</strong></h4>
                     </div>
                     <div class="large-6 columns">
+                        <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                            <!-- Specified Buy Now Button -->
+                            <input type="hidden" name="cmd" value="_xclick">
+                            <!-- PayPal Email -->
+                            <input type="hidden" name="business" value="techguyseller@sandbox.com">
+                            <!-- Item Name -->
+                            <input type="hidden" name="item_name" value="TekBooks Books">
+                            <!-- Item ID -->
+                            <input type="hidden" name="item_number" value="1">
+                            <!-- Currency Code -->
+                            <input type="hidden" name="currency_code" value="USD">
+                            <!-- Price -->
+                            <input type="hidden" name="amount" value="{cart.total}">
+                            <!-- Specify Shipping -->
+                            <input type="hidden" name="no_shipping" value="1">
+                            <!-- Return method -->
+                            <input type="hidden" name="rm" value="2">
+                            <!-- Return URL -->
+                            <input type="hidden" name="return" value="http://localhost:8000">
+                            <!-- Cancel Return URL -->
+                            <input type="hidden" name="cancel_return" value="http://localhost:8000">
+
+                            <!-- Button -->
+                            <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/btn/btn_buynow_107x26.png" name="submit" alt="Buy Now">
+
+                        </form>
+
                     </div>
                 </div>
             {:else}

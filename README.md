@@ -364,8 +364,10 @@ http://localhost:8000/manage/books/add
 
     $ npm start
 
+012 Shopping Cart Part B
 
 
 Errors:  
-Flash Messages is not Show  
-When i tryind to add book without name or price, i get exception: uncaughtException Can't set headers after they are sent.
+1) Flash Messages is not Show  
+2) When i tryind to add book without name or price, i get exception: uncaughtException Can't set headers after they are sent.  
+3) Summ total in order is not working
