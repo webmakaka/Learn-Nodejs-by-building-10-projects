@@ -5,7 +5,7 @@
 
 ### 03 Basic Express Website
 
-002 Express  Jade Template Setup
+002 Express Jade Template Setup
 
     # npm install -g express
     # npm install -g express-generator
@@ -355,4 +355,17 @@ Download Complete
 009 Admin CRUD Part A
 
 Now we could add new books  
-http://172.17.0.1:8000/manage/books/add
+http://localhost:8000/manage/books/add
+
+
+010 Admin CRUD Part B
+
+011 Shopping Cart Part A
+
+    $ npm start
+
+
+
+Errors:  
+Flash Messages is not Show  
+When i tryind to add book without name or price, i get exception: uncaughtException Can't set headers after they are sent.
