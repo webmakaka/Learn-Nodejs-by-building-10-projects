@@ -384,3 +384,7 @@ Errors:
 
     $ npm install
     $ node app
+
+004 Adding Usernames
+
+    $ node app

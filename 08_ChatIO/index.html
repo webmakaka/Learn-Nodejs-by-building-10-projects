@@ -17,7 +17,7 @@
             }
 
             #mainWrapper{
-
+                display:none;
             }
 
             #chatWrapper{
@@ -46,7 +46,6 @@
                 background: #f4f4f4;
                 padding:10px;
                 margin-left:20px;
-                display:none;
             }
 
             input{
@@ -61,6 +60,7 @@
             <div id="namesWrapper">
                 <h2>ChatIO</h2>
                 <p>Create Username:</p>
+                <div id="error"></div>
                 <form id="usernameForm">
                     <input size="35" id="username">
                     <input type="submit" value="Submit">
@@ -90,6 +90,31 @@
                 var $messageForm = $('#messageForm');
                 var $message = $('#message');
                 var $chat = $('#chatWindow');
+                var $usernameForm = $('#usernameForm');
+                var $users = $('#users')
+                var $username = $('#username');
+                var $error = $('#error');
+
+                $usernameForm.submit(function(e){
+                    e.preventDefault();
+                    socket.emit('new user', $username.val(), function(data){
+                        if(data){
+                            $('#namesWrapper').hide();
+                            $('#mainWrapper').show();
+                        } else {
+                            $error.html('Username is already taken');
+                        }
+                    });
+                    $username.val('');
+                });
+
+                socket.on('usernames', function(data){
+                    var html = '';
+                    for(i = 0; i < data.length; i++){
+                        html += data[i] + '<br/>';
+                    }
+                    $users.html(html);
+                })
 
                 $messageForm.submit(function(e){
                     e.preventDefault();
@@ -98,7 +123,7 @@
                 });
 
                 socket.on('new message', function(data){
-                    $chat.append(data.msg+'<br/>');
+                    $chat.append('<strong>'+ data.user + '</strong>: '+data.msg+'<br/>');
                 });
             })
         </script>
