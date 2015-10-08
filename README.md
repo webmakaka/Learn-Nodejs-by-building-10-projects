@@ -379,3 +379,8 @@ Errors:
 ### 08 ChatIO
 
 002 ChatIO User Interface
+
+003 Sending Chat Messages
+
+    $ npm install
+    $ node app
