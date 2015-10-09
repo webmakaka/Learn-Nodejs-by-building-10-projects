@@ -388,3 +388,41 @@ Errors:
 004 Adding Usernames
 
     $ node app
+
+005 App Hosting With Heroku
+
+skipped
+
+
+<br/>
+
+### 09 FindaDoc Directory
+
+    Apache Cassandra
+
+002 Install Cassandra  Setup Keyspace
+
+Template:  
+http://www.free-css-templates.com/preview/Simple/
+
+Apache Cassandra (DataStax Community Edition)  
+http://www.planetcassandra.org/cassandra/
+
+    # cqlsh
+
+    cqlsh> create KEYSPACE testdb WITH REPLICATION = {'class':'SimpleStrategy', 'replication_factor':3};
+
+    cqlsh> describe KEYSPACES;
+
+    cqlsh> USE testdb;
+
+    cqlsh:testdb> CREATE TABLE users(id uuid, name text, email text, username text, PRIMARY KEY(id, name, email, username));
+
+    cqlsh:testdb> DESCRIBE TABLE USERS;
+
+    cqlsh:testdb> INSERT INTO users(id, name, email, username) VALUES(now(), 'Brad Traversy', 'techguyinfo@gmail.com', 'techguy');
+
+    cqlsh:testdb> Select name from users;
+
+
+003 FindaDoc User Interface
