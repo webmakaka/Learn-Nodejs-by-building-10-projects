@@ -1,0 +1,35 @@
+extends layout
+
+block content
+    a(href='/doctors') &lt; Go Back
+    br
+    br
+    .details
+        h2 John Doe
+        | &#x9;
+        br
+        h4 Physican Information
+        | &#x9;
+        ul.doc-info
+            li Full Name: John Doe MD
+            | &#x9;&#x9;
+            li Accepting New Patiencts: Yes
+            | &#x9;&#x9;
+            li Speciality/Category: General
+            | &#x9;&#x9;
+            li Graduation Date: 1997
+        | &#x9;
+        br
+        h4 Practice Information
+        | &#x9;
+        ul.practice-info
+            li Name: Family Medical
+            | &#x9;&#x9;
+            li Address: 55 Main st Bostin MA, 01931
+            | &#x9;&#x9;
+        br
+        br
+        a(class='editDoctor' href='/edit/1') Edit
+        |  |
+        a(class='deleteDoctor' href='' data-id='1') Delete
+                

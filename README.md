@@ -460,3 +460,8 @@ http://www.planetcassandra.org/cassandra/
     $ npm install --save express-session
     $ npm install --save express-messages
     $ npm install --save connect-flash
+
+
+005 Create App With Layout Part B
+
+    $ npm start
