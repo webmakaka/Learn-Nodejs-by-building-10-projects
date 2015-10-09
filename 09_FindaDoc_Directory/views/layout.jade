@@ -1,0 +1,36 @@
+  doctype strict
+  html(xmlns='http://www.w3.org/1999/xhtml')
+  head
+    title= title
+    meta(http-equiv='Content-Language', content='English')
+    meta(http-equiv='Content-Type', content='text/html', charset=UTF-8)
+    link(rel='stylesheet', type='text/css', href='/stylesheets/style.css', media='screen')
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
+    script(src="/javascript.main.js")
+  body
+    #wrap
+        h1
+            a(href='#') FindaDoc
+        h2 Search for local doctors
+    #menu
+        ul
+            li
+                a(href='/') Home
+            li
+                a(href='/doctors') Browse Doctors
+            li
+                a(href='/doctors/add') Add Doctor
+            li
+                a(href='/categories/add') Add Category
+    #content
+          .left
+              !=messages()
+              block content
+          .client
+          include ./includes/categories.jade
+          div(style='clear: both;')
+    #footer
+          | Designed by
+          a(href='#') Free CSS Templates
+          | , Thansk to
+          a(href='#') custom web design

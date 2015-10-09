@@ -426,3 +426,37 @@ http://www.planetcassandra.org/cassandra/
 
 
 003 FindaDoc User Interface
+
+004 Create App With Layout Part A
+
+
+    # cqlsh
+
+    CREATE KEYSPACE findadoc WITH REPLICATION = {'class':'SimpleStrategy', 'replication_factor':3};
+
+    CREATE TABLE findadoc.doctors(doc_id uuid, full_name text, category text, practice_name text, street_address text, city text, state text, zip text, new_patients boolean, graduation_year int, PRIMARY KEY(doc_id, full_name, category, city, state));
+
+    DESCRIBE KEYSPACES;
+    DESCRIBE KEYSPACE findadoc;
+
+    USE findadoc;
+
+    CREATE TABLE categories(cat_id uuid, name text, PRIMARY KEY(cat_id, name));
+
+    INSERT INTO categories(cat_id, name) VALUES (now(), 'General');
+    INSERT INTO categories(cat_id, name) VALUES (now(), 'Neurologist');
+    INSERT INTO categories(cat_id, name) VALUES (now(), 'Dentist');
+
+    INSERT INTO doctors(doc_id, full_name, category, practice_name, street_address, city, state, zip, new_patients, graduation_year) VALUES (now(), 'Thomas Smith MD', 'General', 'Family Medical', '50 Main st', 'Saugus', 'MA', '01906', true, 1997);
+
+    INSERT INTO doctors(doc_id, full_name, category, practice_name, street_address, city, state, zip, new_patients, graduation_year) VALUES (now(), 'James Walsh MD', 'General', 'Mass Medical', '10 Congress st', 'Amesbury', 'MA', '01913', true, 1997);
+
+    SELECT * FROM doctors;
+    SELECT * FROM categories;
+
+    $ express
+    $ npm install
+    $ npm install --save cassandra-driver
+    $ npm install --save express-session
+    $ npm install --save express-messages
+    $ npm install --save connect-flash
