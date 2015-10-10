@@ -4,24 +4,16 @@ block content
     h2 Browse doctors
     br
     ul.docs
-        li
-            h3 John Doe
-            p Speciality: Dentist
-            p Location: Boston MA, 01930
-            p 
-                a(href='/doctors/details/1') &gt; Details
-        li
-            h3 John Doe
-            p Speciality: Dentist
-            p Location: Boston MA, 01930
-            p 
-                a(href='/doctors/details/1') &gt; Details
-        li
-            h3 John Doe
-            p Speciality: Dentist
-            p Location: Boston MA, 01930
-            p 
-                a(href='/doctors/details/1') &gt; Details
+        if doctors != false 
+            each doctor, i in doctors   
+                li
+                    h3 #{doctor.full_name}
+                    p Speciality: #{doctor.category}
+                    p Location: #{doctor.city} #{doctor.state}, #{doctor.zip}
+                    p 
+                        a(href='/doctors/details/#{doctor.doc_id}') &gt; Details
+        else
+            p Sorry no doctors listed
 
 
         

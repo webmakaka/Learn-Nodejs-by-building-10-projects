@@ -465,3 +465,7 @@ http://www.planetcassandra.org/cassandra/
 005 Create App With Layout Part B
 
     $ npm start
+
+006 Reading From Cassandra Part A
+
+    $ npm start
