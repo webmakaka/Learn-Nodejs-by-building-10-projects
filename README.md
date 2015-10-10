@@ -472,10 +472,17 @@ http://www.planetcassandra.org/cassandra/
 
 007 Reading From Cassandra Part B
 
-
     # cqlsh
     USE findadoc;
     CREATE INDEX on doctors(category);
     CREATE INDEX on doctors(state);
 
     $ npm start
+
+008 Search  Insert
+
+    $ npm start
+
+ERRORS:  
+flash-messages not works  
+We can't delete and edit doctors and categories

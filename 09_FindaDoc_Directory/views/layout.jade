@@ -6,7 +6,6 @@ head
     meta(http-equiv='Content-Type', content='text/html', charset=UTF-8)
     link(rel='stylesheet', type='text/css', href='/stylesheets/style.css', media='screen')
     script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
-    script(src="/javascript.main.js")
 body
     #wrap
         #header
@@ -26,6 +25,7 @@ body
                     a(href='/categories/add') Add Category
         #content
               .left
+                  !=messages()
                   block content
                       
               .right
