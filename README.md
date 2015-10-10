@@ -515,3 +515,10 @@ http://startbootstrap.com/template-overviews/freelancer/
     $ npm install --save multer@0.1.8
     $ npm install --save moment
     $ npm install --save express-validator
+
+<br/>
+
+    $ npm start
+    localhost:3000
+
+    
