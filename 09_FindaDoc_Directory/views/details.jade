@@ -5,31 +5,31 @@ block content
     br
     br
     .details
-        h2 John Doe
+        h2 #{doctor.full_name}
         | &#x9;
         br
         h4 Physican Information
         | &#x9;
         ul.doc-info
-            li Full Name: John Doe MD
+            li Full Name: #{doctor.full_name}
             | &#x9;&#x9;
-            li Accepting New Patiencts: Yes
+            li Accepting New Patiencts: #{doctor.new_patients}
             | &#x9;&#x9;
-            li Speciality/Category: General
+            li Speciality/Category: #{doctor.category}
             | &#x9;&#x9;
-            li Graduation Date: 1997
+            li Graduation Year: #{doctor.graduation_year}
         | &#x9;
         br
         h4 Practice Information
         | &#x9;
         ul.practice-info
-            li Name: Family Medical
+            li Name: #{doctor.practice_name}
             | &#x9;&#x9;
-            li Address: 55 Main st Bostin MA, 01931
+            li Address: #{doctor.street_address} #{doctor.city} #{doctor.state}, #{doctor.zip}
             | &#x9;&#x9;
         br
         br
-        a(class='editDoctor' href='/edit/1') Edit
+        a(class='editDoctor' href='/edit/#{doctor.doc_id}') Edit
         |  |
-        a(class='deleteDoctor' href='' data-id='1') Delete
+        a(class='deleteDoctor' href='' data-id='#{doctor.doc_id}') Delete
                 

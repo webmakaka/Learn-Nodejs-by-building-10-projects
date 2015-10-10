@@ -29,7 +29,29 @@ router.get('/add', function(req, res, next) {
 });
 
 router.get('/details/:id', function(req, res, next) {
-  res.render('details');
+    var query = "SELECT * FROM findadoc.doctors WHERE doc_id = ?";
+    client.execute(query, [req.params.id], function(err, result){
+        if (err){
+            res.status(404).send({msg:err});
+        } else {
+            res.render('details', {
+                doctor: result.rows['0']
+            });
+        }
+    });
+});
+
+router.get('/category/:name', function(req, res, next) {
+    var query = "SELECT * FROM findadoc.doctors WHERE category = ?";
+    client.execute(query, [req.params.name], function(err, results){
+        if (err){
+            res.status(404).send({msg:err});
+        } else {
+            res.render('doctors', {
+                doctors: results.rows
+            });
+        }
+    });
 });
 
 

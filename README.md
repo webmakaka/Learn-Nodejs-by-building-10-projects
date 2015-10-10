@@ -469,3 +469,13 @@ http://www.planetcassandra.org/cassandra/
 006 Reading From Cassandra Part A
 
     $ npm start
+
+007 Reading From Cassandra Part B
+
+
+    # cqlsh
+    USE findadoc;
+    CREATE INDEX on doctors(category);
+    CREATE INDEX on doctors(state);
+
+    $ npm start

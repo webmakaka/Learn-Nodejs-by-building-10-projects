@@ -47,6 +47,14 @@ app.use(function(req, res, next){
     next();
 });
 
+var query = "SELECT * FROM findadoc.categories";
+client.execute(query, [], function(err, results){
+    if (err){
+        res.status(404).send({msg:err});
+    } else {
+        app.locals.cats = results.rows;
+    }
+});
 
 app.use('/', routes);
 app.use('/doctors', doctors);
