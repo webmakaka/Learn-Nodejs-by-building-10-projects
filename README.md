@@ -521,4 +521,7 @@ http://startbootstrap.com/template-overviews/freelancer/
     $ npm start
     localhost:3000
 
-    
+003 S3 - Frontend Project Display Part A
+
+Covert html to Jade:  
+http://html2jade.aaron-powell.com/
