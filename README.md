@@ -536,8 +536,12 @@ http://html2jade.aaron-powell.com/
 
 http://getbootstrap.com/examples/starter-template/
 
-006 Create Backend  Add Projects Part B
+006 Create Backend Add Projects Part B
 
 http://localhost:3000/admin
+
+    $ npm start
+
+007 Project Edit Delete
 
     $ npm start
