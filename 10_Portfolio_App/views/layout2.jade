@@ -14,12 +14,11 @@ head
     |     
     title Starter Template for Bootstrap
     // Bootstrap core CSS
-    link(href='stylesheets/dist/css/bootstrap.min.css', rel='stylesheet')
+    link(href='/stylesheets/bootstrap.min.css', rel='stylesheet')
     // Custom styles for this template
-    link(href='stylesheets/dashboard.css', rel='stylesheet')
-  |   
+    link(href='/stylesheets/dashboard.css', rel='stylesheet')
   body
-    nav.navbar.navbar-inverse.navbar-fixed-top
+    nav.navbar.navbar-inverse
       .container
         .navbar-header
           button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
@@ -55,5 +54,6 @@ head
     // Placed at the end of the document so the pages load faster
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
     |     
-    script(src='javascripts/bootstrap.min.js')
-    script(src='javascripts/dashboard.js')
+
+    script(src='/javascripts/bootstrap.min.js')
+    script(src='/javascripts/dashboard.js')
