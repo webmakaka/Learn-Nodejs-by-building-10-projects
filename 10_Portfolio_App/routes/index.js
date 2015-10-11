@@ -3,13 +3,13 @@ var router = express.Router();
 var mysql = require('mysql');
 
 var connection = mysql.createConnection({
-  host: 'localhost',
+  host: '172.17.0.2',
   user: 'root',
-  pasword: '1234',
+  pasword: 'root',
   database: 'portfolio'
 });
 
-connectiion.connect();
+connection.connect();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {

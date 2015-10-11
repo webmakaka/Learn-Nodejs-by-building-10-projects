@@ -498,6 +498,8 @@ We can't delete and edit doctors and categories
 
 http://startbootstrap.com/template-overviews/freelancer/
 
+    CREATE DATABASE portfolio;
+
     CREATE TABLE `portfolio`.`projects` ( `id` INT(11) NOT NULL AUTO_INCREMENT , `title` VARCHAR(255) NOT NULL , `description` TEXT NOT NULL , `service` VARCHAR(255) NOT NULL , `client` VARCHAR(255) NOT NULL , `image` VARCHAR(255) NOT NULL , `date` DATE NOT NULL , PRIMARY KEY (`id`) ) ENGINE = InnoDB;
 
     INSERT INTO `portfolio`.`projects` (`id`, `title`, `description`, `service`, `client`, `image`, `date`) VALUES (NULL, 'Project1', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat tincidunt congue. Etiam vel diam pulvinar, commodo lacus vitae, ullamcorper ante. In hendrerit, lacus a mollis molestie, enim arcu pharetra arcu, sit amet lacinia metus odio ac lacus. Proin eu ligula eu mi vehicula accumsan.', 'Web Development', 'client One', '1.jpg', '2015-10-11');
@@ -525,3 +527,7 @@ http://startbootstrap.com/template-overviews/freelancer/
 
 Covert html to Jade:  
 http://html2jade.aaron-powell.com/
+
+004 S3 - Frontend Project Display Part B
+
+    $ npm start
