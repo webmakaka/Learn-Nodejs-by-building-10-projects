@@ -545,3 +545,38 @@ http://localhost:3000/admin
 007 Project Edit Delete
 
     $ npm start
+
+
+<br/>
+
+### 11 eLearning System
+
+    kickstart Frontend Framework
+    MongoDB
+    Handlebars Templating
+
+<br/>
+
+    $ express
+    $ npm install
+    $ npm install --save bcryptjs
+    $ npm install --save passport  
+    $ npm install --save passport-http     
+    $ npm install --save passport-local
+    $ npm install --save mongodb
+    $ npm install --save mongoose
+    $ npm install --save handlebars    
+    $ npm install --save express-session
+    $ npm install --save express-messages
+    $ npm install --save connect-flash
+    $ npm install --save express-validator
+
+<br/>  
+
+    $ mongo
+    $ use elearn
+    $ db.createCollection('users');
+    $ db.createCollection('students');
+    $ db.createCollection('instructors');
+    $ db.createCollection('classes');
+    $ show collections
