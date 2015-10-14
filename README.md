@@ -570,7 +570,7 @@ http://localhost:3000/admin
     $ npm install --save handlebars    
     $ npm install --save express-session
     $ npm install --save express-messages
-    $ npm install --save express-handlebars 
+    $ npm install --save express-handlebars
     $ npm install --save connect-flash
     $ npm install --save express-validator
 
@@ -585,9 +585,17 @@ http://localhost:3000/admin
     $ show collections
 
 
-003 App  Kickstart Setup Part B
+003 App Kickstart Setup Part B
 
     $ npm start
     localhost:3000
 
 http://www.99lime.com/elements/
+
+
+004 Fetching Classes - Basics Part A
+
+    $ mongo
+    $ use elearn
+    $ db.classes.insert({title:'HTML 101', description:'Description 1', instructior:'Brad Traversy'});
+    $ db.classes.insert({title:'Intro to PHP', description:'Description 2', instructior:'John Doe'});
