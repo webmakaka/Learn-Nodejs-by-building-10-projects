@@ -2,18 +2,18 @@ var mongoose = require('mongoose');
 
 // Class Schema
 
-var classSchema = mongoose.schema({
+var classSchema = mongoose.Schema({
   title: {
     type: String
   },
-  descritption: {
+  description: {
     type: String
   },
   instructor:{
     type: String
   },
   lessons:[{
-    lesson_number: {type: number},
+    lesson_number: {type: Number},
     lesson_title: {type: String},
     lesson_body:{type: String}
   }]

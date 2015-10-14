@@ -3,7 +3,6 @@ var router = express.Router();
 
 Class = require('../models/class');
 
-
 router.get('/', function(req, res, next) {
   Class.getClasses(function(err, classes){
     if(err){
@@ -12,9 +11,9 @@ router.get('/', function(req, res, next) {
     } else {
 
       console.log(classes);
-      res.render('index', { "classes": classes});
+      res.render('classes/index', { "classes": classes});
     }
-  },3);
+  });
 
 });
 

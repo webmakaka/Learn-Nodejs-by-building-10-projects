@@ -599,3 +599,5 @@ http://www.99lime.com/elements/
     $ use elearn
     $ db.classes.insert({title:'HTML 101', description:'Description 1', instructior:'Brad Traversy'});
     $ db.classes.insert({title:'Intro to PHP', description:'Description 2', instructior:'John Doe'});
+
+005 Fetching Classes - Basics Part B
