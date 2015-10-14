@@ -71,6 +71,11 @@ app.use(flash());
 
 app.use(function(req, res, next){
   res.locals.messages = require('express-messages')(req, res);
+
+  if(req.url == '/'){
+    res.locals.isHome = true;
+  }
+
   next();
 });
 
