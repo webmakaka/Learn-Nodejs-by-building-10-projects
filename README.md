@@ -557,6 +557,8 @@ http://localhost:3000/admin
 
 <br/>
 
+002 App  Kickstart Setup Part A
+
     $ express
     $ npm install
     $ npm install --save bcryptjs
@@ -568,6 +570,7 @@ http://localhost:3000/admin
     $ npm install --save handlebars    
     $ npm install --save express-session
     $ npm install --save express-messages
+    $ npm install --save express-handlebars 
     $ npm install --save connect-flash
     $ npm install --save express-validator
 
@@ -580,3 +583,11 @@ http://localhost:3000/admin
     $ db.createCollection('instructors');
     $ db.createCollection('classes');
     $ show collections
+
+
+003 App  Kickstart Setup Part B
+
+    $ npm start
+    localhost:3000
+
+http://www.99lime.com/elements/
