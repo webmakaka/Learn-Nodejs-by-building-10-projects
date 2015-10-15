@@ -5,6 +5,8 @@
 
 ### 03 Basic Express Website
 
+    nodemailer
+
 002 Express Jade Template Setup
 
     # npm install -g express
@@ -607,3 +609,9 @@ http://www.99lime.com/elements/
 006 Fetching Classes - Final Features
 
     $ npm start
+
+007 Registration  Login - Basics Part A
+
+    $ npm start
+
+    

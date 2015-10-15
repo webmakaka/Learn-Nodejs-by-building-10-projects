@@ -160,3 +160,8 @@ display:block;
 	padding: 10px;
 	margin-bottom: 20px;
 }
+
+form label{
+	display:inline-block;
+	width: 180px;
+}
