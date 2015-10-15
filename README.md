@@ -556,6 +556,7 @@ http://localhost:3000/admin
     kickstart Frontend Framework
     MongoDB
     Handlebars Templating
+    Async
 
 <br/>
 
@@ -610,8 +611,12 @@ http://www.99lime.com/elements/
 
     $ npm start
 
-007 Registration  Login - Basics Part A
+007 Registration Login - Basics Part A
 
     $ npm start
+
+008 Registration Login - Basics Part B
+
+    $ npm install --save async
 
     

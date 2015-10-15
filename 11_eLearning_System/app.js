@@ -14,6 +14,8 @@ var mongo = require('mongodb');
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/elearn');
 var db = mongoose.connection;
+async = require('async');
+
 
 
 var routes = require('./routes/index');
