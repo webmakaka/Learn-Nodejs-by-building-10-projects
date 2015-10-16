@@ -626,3 +626,7 @@ http://www.99lime.com/elements/
 010 Student Class Registrations
 
     $ npm start
+
+011 Instructor Access
+
+    $ npm start
