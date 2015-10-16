@@ -77,8 +77,15 @@ app.use(function(req, res, next){
   if(req.url == '/'){
     res.locals.isHome = true;
   }
-
   next();
+});
+
+app.get('*', function(req, res, next){
+    res.locals.user = req.user || null;
+    if(req.user){
+      res.locals.type = req.user.type;
+    }
+    next();
 });
 
 app.use('/', routes);
@@ -98,6 +105,7 @@ app.use(function(req, res, next) {
 // will print stacktrace
 if (app.get('env') === 'development') {
   app.use(function(err, req, res, next) {
+    console.error(err.stack);
     res.status(err.status || 500);
     res.render('error', {
       message: err.message,

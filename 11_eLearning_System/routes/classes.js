@@ -10,8 +10,6 @@ router.get('/', function(req, res, next) {
       console.log(err);
       res.send(err);
     } else {
-
-      console.log(classes);
       res.render('index', { "classes": classes});
     }
   },3);

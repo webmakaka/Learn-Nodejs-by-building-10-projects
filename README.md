@@ -198,7 +198,7 @@ http://lipsum.com/
 
 mongolab.com
 
-create new database: comevents
+create new database: comevents  
 create a new user:
 
 
@@ -618,5 +618,10 @@ http://www.99lime.com/elements/
 008 Registration Login - Basics Part B
 
     $ npm install --save async
+
+009 Registration  Login - Final Features
+
+    $ npm start
+
 
     

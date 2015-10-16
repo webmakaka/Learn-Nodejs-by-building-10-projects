@@ -27,6 +27,15 @@ router.post('/signup', function(req, res, next) {
     var password2         = req.body.password2;
     var type              = req.body.type;
 
+    // console.log('first_name ' + first_name);
+    // console.log('last_name ' + last_name);
+    // console.log('zip ' + zip);
+    // console.log('email ' + email);
+    //
+    // console.log('username ' + username);
+    // console.log('password1 ' + password);
+    // console.log('password2 ' + password2);
+
     // Form Field Validation
     req.checkBody('first_name', 'First name field is required').notEmpty();
     req.checkBody('last_name', 'Last name field is required').notEmpty();
@@ -87,10 +96,74 @@ router.post('/signup', function(req, res, next) {
         req.flash('success', 'User added');
         res.redirect('/');
     }
-
-
-
-
 });
+
+passport.serializeUser(function(user, done){
+    done(null, user._id);
+});
+
+passport.deserializeUser(function(id, done){
+    User.getUserById(id, function(err, user){
+      done(err, user);
+    });
+});
+
+router.post('/login', passport.authenticate('local', {
+                                            failureRedirect:'/',
+                                            failureFlash: 'Wrong Username or Password'
+                                          }
+      ), function(req, res){
+          console.log('Authentication Successful');
+          req.flash('success', 'You are now logged in');
+          res.redirect('/');
+});
+
+passport.use(new LocalStrategy(
+    function(username, password, done){
+
+      console.log("username: " + username);
+      console.log("password: " + password);
+
+      User.getUserByUsername(username, function(err, user){
+
+          if (err) throw err;
+
+          if(!user){
+            console.log("Unknown user " + username);
+            return done(null, false, { message: 'Unknown user ' + username });
+          }
+
+          User.comparePassword(password, user.password, function(err, isMatch){
+
+            if (err) {
+              console.log("error " + err);
+              return done(err);
+            }
+
+            if(isMatch){
+              console.log('Password Match');
+              return done(null, user);
+            } else {
+              console.log('Invalid Password');
+              return done(null, false, {message: 'Invalid password'});
+            }
+          });
+      });
+    }
+));
+
+router.get('/logout', function(req, res){
+    req.logout();
+    req.flash('success', "You have logged out");
+    res.redirect('/');
+});
+
+function ensureAuthenticated(req, res, next){
+  if (req.isAuthenticated()){
+      return next();
+  }
+
+  res.redirect('/');
+}
 
 module.exports = router;
