@@ -12,7 +12,7 @@ router.get('/classes', ensureAuthenticated, function(req, res, next) {
       console.log(err);
       res.send(err);
     } else {
-      console.log('instructor ' + instructor);
+      console.log('router.get(/classes... ' + instructor);
       res.render('instructors/classes', { "instructor": instructor});
     }
   });
@@ -46,8 +46,8 @@ router.post('/classes/:id/lessons/new', ensureAuthenticated, function(req, res, 
 
       info['class_id']        = req.params.id;
       info['lesson_number']   = req.body.lesson_number;
-      info['lesson_title']    = req.body.losson_title;
-      info['lesson_body']     = req.body.losson_body;
+      info['lesson_title']    = req.body.lesson_title;
+      info['lesson_body']     = req.body.lesson_body;
 
       Class.addLesson(info, function(err, lesson){
           console.log('Lesson Added');

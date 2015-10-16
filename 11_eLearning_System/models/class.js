@@ -33,6 +33,7 @@ module.exports.getClassById = function(id, callback){
 };
 
 module.exports.addLesson = function(info, callback){
+
     class_id      = info['class_id'];
     lesson_number = info['lesson_number'];
     lesson_title  = info['lesson_title'];
