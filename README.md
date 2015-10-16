@@ -33,6 +33,8 @@
 
 To send emails you should be logged in  gmail
 
+![Application](/img/03.png?raw=true)
+
 <br/>
 
 ### 04 User Login System
@@ -101,6 +103,8 @@ Installation componetns for windows (Open SSL)
 
 011 Logout  Access Control Part B
 
+
+![Application](/img/04.png?raw=true)
 
 <br/>
 
@@ -189,6 +193,7 @@ http://lipsum.com/
 
     $ npm start
 
+![Application](/img/05.png?raw=true)
 
 <br/>
 
@@ -277,6 +282,8 @@ http://localhost:3000/login/forgot/
 009 Edit and Delete Events Part B
 
     $ grunt
+
+![Application](/img/06.png?raw=true)
 
 
 <br/>
@@ -369,6 +376,8 @@ http://localhost:8000/manage/books/add
 012 Shopping Cart Part B
 
 
+![Application](/img/07.png?raw=true)
+
 Errors:  
 1) Flash Messages is not Show  
 2) When i tryind to add book without name or price, i get exception: uncaughtException Can't set headers after they are sent.  
@@ -395,6 +404,7 @@ Errors:
 
 skipped
 
+![Application](/img/08.png?raw=true)
 
 <br/>
 
@@ -490,6 +500,8 @@ flash-messages not works
 We can't delete and edit doctors and categories
 
 
+![Application](/img/09.png?raw=true)
+
 <br/>
 
 ### 10 Portfolio App
@@ -548,6 +560,8 @@ http://localhost:3000/admin
 
     $ npm start
 
+
+![Application](/img/10.png?raw=true)
 
 <br/>
 
@@ -638,3 +652,5 @@ http://www.99lime.com/elements/
 013 Class Lessons Part B
 
     $ npm start
+
+![Application](/img/11.png?raw=true)
