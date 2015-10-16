@@ -34,6 +34,31 @@ router.post('/classes/register', function(req, res){
 
 });
 
+
+router.get('/classes/:id/lessons/new', ensureAuthenticated, function(req, res, next) {
+      res.render('instructors/newlesson', { "class_id": req.params.id});
+});
+
+
+router.post('/classes/:id/lessons/new', ensureAuthenticated, function(req, res, next) {
+
+      var info = [];
+
+      info['class_id']        = req.params.id;
+      info['lesson_number']   = req.body.lesson_number;
+      info['lesson_title']    = req.body.losson_title;
+      info['lesson_body']     = req.body.losson_body;
+
+      Class.addLesson(info, function(err, lesson){
+          console.log('Lesson Added');
+      });
+
+      req.flash('succes', 'Lesson Added');
+      res.redirect('/instructors/classes');
+});
+
+
+
 function ensureAuthenticated(req, res, next){
   if (req.isAuthenticated()){
       return next();

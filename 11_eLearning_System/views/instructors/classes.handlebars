@@ -6,6 +6,7 @@
       <th>Class ID</th>
       <th>Class Name</th>
       <th></th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -14,6 +15,7 @@
           <td>{{class_id}}</td>
           <td>{{class_title}}</td>
           <td><a href="/classes/{{class_id}}/lessons">View Lessons</a></td>
+          <td><a href="/instructors/classes/{{class_id}}/lessons/new">Add Lesson</a></td>
       </tr>
     {{/each}}
   </tbody>

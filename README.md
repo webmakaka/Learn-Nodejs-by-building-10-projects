@@ -630,3 +630,7 @@ http://www.99lime.com/elements/
 011 Instructor Access
 
     $ npm start
+
+012 Class Lessons Part A
+
+    $ npm start
