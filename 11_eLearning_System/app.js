@@ -21,6 +21,7 @@ async = require('async');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var classes = require('./routes/classes');
+var students = require('./routes/students');
 
 var app = express();
 
@@ -83,7 +84,7 @@ app.use(function(req, res, next){
 app.get('*', function(req, res, next){
     res.locals.user = req.user || null;
     if(req.user){
-      res.locals.type = req.user.type;
+      res.locals.usertype = req.user.type;
     }
     next();
 });
@@ -91,6 +92,8 @@ app.get('*', function(req, res, next){
 app.use('/', routes);
 app.use('/users', users);
 app.use('/classes', classes);
+app.use('/students', students);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

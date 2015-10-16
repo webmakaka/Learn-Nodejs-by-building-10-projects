@@ -9,7 +9,7 @@
 
 {{#if user}}
     <form id="classRegForm" method="post" action="/students/classes/register">
-        <input type="hidden" name="student_id" value="{{user._id}}">
+        <input type="hidden" name="student_username" value="{{user.username}}">
         <input type="hidden" name="class_id" value="{{class._id}}">
         <input type="hidden" name="class_title" value="{{class.title}}">
         <input type="submit" class="button" value="Register For This Class">

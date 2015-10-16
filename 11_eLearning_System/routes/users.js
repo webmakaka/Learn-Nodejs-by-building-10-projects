@@ -115,7 +115,8 @@ router.post('/login', passport.authenticate('local', {
       ), function(req, res){
           console.log('Authentication Successful');
           req.flash('success', 'You are now logged in');
-          res.redirect('/');
+          var usertype = req.user.type;
+          res.redirect('/' + usertype + 's/classes');
 });
 
 passport.use(new LocalStrategy(
@@ -162,7 +163,6 @@ function ensureAuthenticated(req, res, next){
   if (req.isAuthenticated()){
       return next();
   }
-
   res.redirect('/');
 }
 
