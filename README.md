@@ -204,7 +204,7 @@ http://lipsum.com/
 mongolab.com
 
 create new database: comevents  
-create a new user:
+create a new user: user1
 
 
     # npm install -g grunt-cli
@@ -235,7 +235,7 @@ https://github.com/jedireza/drywall/
     db.users.update({email:'your@email.addy'}, {$set: {email:'your_email@gmail.com'}})
 
 
-reset password  
+reset password by link:  
 http://localhost:3000/login/forgot/
 
 
@@ -310,6 +310,9 @@ krakenjs.com
     ? Author: Brad Traversy
     ? Template library? Dust (via Makara 2)
     ? Include i18n support? Yes
+
+I recommend no not chose i18n support for this project!
+
     ? Front end package manager ? Bower
     ? CSS preprocessor library? LESS
     ? JavaScript library? RequireJS
