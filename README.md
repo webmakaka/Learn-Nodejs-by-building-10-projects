@@ -1,5 +1,6 @@
 # Learn-Nodejs-by-building-10-projects
-[Eduonix] Learn Nodejs by building 10 projects [2015, ENG]
+[Eduonix] Learn Nodejs by building 10 projects [2015, ENG]:  
+http://www.eduonix.com/courses/Web-Development/Learn-Nodejs-by-building-10-Projects-From-Scratch
 
 Original Images you could find in this repo (i think):  
 https://github.com/jakblak/10_node
@@ -312,10 +313,10 @@ krakenjs.com
     ? Description: Simple shopping cart
     ? Author: Brad Traversy
     ? Template library? Dust (via Makara 2)
+    
+I recommend do not chose i18n support for this project!
+
     ? Include i18n support? Yes
-
-I recommend no not chose i18n support for this project!
-
     ? Front end package manager ? Bower
     ? CSS preprocessor library? LESS
     ? JavaScript library? RequireJS
