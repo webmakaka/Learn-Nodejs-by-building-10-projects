@@ -5,12 +5,13 @@ http://www.eduonix.com/courses/Web-Development/Learn-Nodejs-by-building-10-Proje
 Original Images you could find in this repo (i think):  
 https://github.com/jakblak/10_node
 
+___
 
-If you will register on udemy.com and click preview on this course.  
-After some period you can recieve (by email) big discount on this course.
+If you will register on udemy.com and click on "Start Free Preview", аfter some period you can recieve (by email) big discount on this course.
 
 ![Application](/img/node.png?raw=true)
 
+___
 
 <br/>
 
