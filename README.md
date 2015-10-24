@@ -5,6 +5,13 @@ http://www.eduonix.com/courses/Web-Development/Learn-Nodejs-by-building-10-Proje
 Original Images you could find in this repo (i think):  
 https://github.com/jakblak/10_node
 
+
+If you will register on udemy.com and click preview on this course.  
+After some period you can recieve (by email) big discount on this course.
+
+![Application](/img/node.png?raw=true)
+
+
 <br/>
 
 ### 03 Basic Express Website
@@ -313,7 +320,7 @@ krakenjs.com
     ? Description: Simple shopping cart
     ? Author: Brad Traversy
     ? Template library? Dust (via Makara 2)
-    
+
 I recommend do not chose i18n support for this project!
 
     ? Include i18n support? Yes
