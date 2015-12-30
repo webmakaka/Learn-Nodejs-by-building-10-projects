@@ -53,9 +53,6 @@ To send emails you should be logged in  gmail
 
 002 MongoDB Install Setup
 
-Installation MongoDB on windows
-
-
     $ mongo
     > use nodeauth
     > db.createCollection('users');
