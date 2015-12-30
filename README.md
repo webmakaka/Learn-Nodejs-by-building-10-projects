@@ -2,12 +2,12 @@
 [Eduonix] Learn Nodejs by building 10 projects [2015, ENG]:  
 http://www.eduonix.com/courses/Web-Development/Learn-Nodejs-by-building-10-Projects-From-Scratch
 
-Original Images you could find in this repo (i think):  
+Original Images you can find in this repo (i think):  
 https://github.com/jakblak/10_node
 
 ___
 
-If you will register on udemy.com and click on "Start Free Preview", аfter some period you can recieve (by email) big discount on this course.
+If you will register on udemy.com and click on "Start Free Preview", аfter some period you can receive (by email) big discount on this course.
 
 ![Application](/img/node.png?raw=true)
 
