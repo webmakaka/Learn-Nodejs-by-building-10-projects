@@ -668,6 +668,6 @@ http://www.99lime.com/elements/
 
     $ npm start
 
-![Application](/img/11-1.png.png?raw=true)
+![Application](/img/11-1.png?raw=true)
 
-![Application](/img/11-2.png.png?raw=true)
+![Application](/img/11-2.png?raw=true)
