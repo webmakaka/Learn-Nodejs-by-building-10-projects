@@ -2,9 +2,6 @@
 [Eduonix] Learn Nodejs by building 10 projects [2015, ENG]:  
 http://www.eduonix.com/courses/Web-Development/Learn-Nodejs-by-building-10-Projects-From-Scratch
 
-Original Images you can find in this repo (i think):  
-https://github.com/jakblak/10_node
-
 ___
 
 If you will register on udemy.com and click on "Start Free Preview", аfter some period you can receive (by email) big discount on this course.
@@ -12,6 +9,12 @@ If you will register on udemy.com and click on "Start Free Preview", аfter some
 ![Application](/img/node.png?raw=true)
 
 ___
+
+
+I'm working on Linux with node version:
+
+    $ node -v
+    v0.10.41
 
 <br/>
 
@@ -665,4 +668,6 @@ http://www.99lime.com/elements/
 
     $ npm start
 
-![Application](/img/11.png?raw=true)
+![Application](/img/11-1.png.png?raw=true)
+
+![Application](/img/11-2.png.png?raw=true)
