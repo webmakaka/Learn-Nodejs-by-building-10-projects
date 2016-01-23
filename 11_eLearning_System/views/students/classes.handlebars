@@ -1,5 +1,5 @@
 <h2> {{student.first_name}}'s Clasees</h2>
-
+{{#if student.classes}}
 <table cellspacing="0" cellpadding="0">
   <thead>
     <tr>
@@ -18,3 +18,6 @@
     {{/each}}
   </tbody>
 </table>
+{{else}}
+    <p>You are not registered for any classes!</p>
+{{/if}}
