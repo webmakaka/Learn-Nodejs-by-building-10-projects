@@ -1,5 +1,4 @@
-# Learn-Nodejs-by-building-10-projects
-[Eduonix] Learn Nodejs by building 10 projects [2015, ENG]:  
+# [Eduonix] Learn Nodejs by building 10 projects [2015, ENG]:  
 http://www.eduonix.com/courses/Web-Development/Learn-Nodejs-by-building-10-Projects-From-Scratch
 
 ___
