@@ -3,7 +3,7 @@ extends layout
 block content
   h1 Login
   p Please login below
-  form(method='post', action='/users/login',endtype='multipart/form-data')
+  form(method='post', action='/users/login',enctype='multipart/form-data')
       .form-group
           label Username
           input.form-control(name='username', type='text')
