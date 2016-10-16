@@ -28,7 +28,7 @@ I'm working on Linux with node version:
 
     $ express express-websit
     $ cd express-website/
-    $ inpm install
+    $ npm install
 
     $ npm install --save nodemailer
     $ npm start
