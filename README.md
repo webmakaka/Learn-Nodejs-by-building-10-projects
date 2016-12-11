@@ -679,7 +679,7 @@ ___
 
 **Marley**
 
-<a href="https://jsdev.org">jsdev.org</a>
+<a href="https://labs.jsdev.org">labs.jsdev.org</a>
 
 email:  
 ![Marley](http://img.fotografii.org/a3333333mail.gif "Marley")
