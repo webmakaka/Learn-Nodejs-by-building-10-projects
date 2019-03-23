@@ -1,6 +1,7 @@
 # [Eduonix] Learn Nodejs by building 10 projects [2015, ENG]:  
 http://www.eduonix.com/courses/Web-Development/Learn-Nodejs-by-building-10-Projects-From-Scratch
 
+**UPDATABLE!**
 ___
 
 If you will register on udemy.com and click on "Start Free Preview", аfter some period you can receive (by email) big discount on this course.
@@ -679,7 +680,7 @@ ___
 
 **Marley**
 
-<a href="https://labs.jsdev.org">labs.jsdev.org</a>
+<a href="https://jsdev.org">jsdev.org</a>
 
 email:  
 ![Marley](http://img.fotografii.org/a3333333mail.gif "Marley")
