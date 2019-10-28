@@ -676,11 +676,11 @@ http://www.99lime.com/elements/
 ![Application](/img/10-2.png?raw=true)
 
 
-___
+---
 
 **Marley**
 
 <a href="https://jsdev.org">jsdev.org</a>
 
-email:  
-![Marley](http://img.fotografii.org/a3333333mail.gif "Marley")
+Any questions on eng: https://t.me/jsdev_org  
+Любые вопросы на русском: https://t.me/jsdev_ru
