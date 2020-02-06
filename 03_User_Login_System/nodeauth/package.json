@@ -17,7 +17,7 @@
     "express-validator": "^2.17.1",
     "jade": "~1.11.0",
     "mongodb": "^2.0.43",
-    "mongoose": "^4.1.8",
+    "mongoose": "^5.8.11",
     "morgan": "~1.6.1",
     "multer": "^0.1.8",
     "node-gyp": "^3.0.3",
