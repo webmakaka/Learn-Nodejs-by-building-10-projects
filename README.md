@@ -2,11 +2,6 @@
 http://www.eduonix.com/courses/Web-Development/Learn-Nodejs-by-building-10-Projects-From-Scratch
 
 **UPDATABLE!**
-___
-
-If you will register on udemy.com and click on "Start Free Preview", аfter some period you can receive (by email) big discount on this course.
-
-![Application](/img/node.png?raw=true)
 
 ___
 
