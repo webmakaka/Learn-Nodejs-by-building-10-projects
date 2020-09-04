@@ -19,7 +19,7 @@
     "express-validator": "^2.17.1",
     "handlebars": "^4.0.3",
     "jade": "~1.11.0",
-    "mongodb": "^2.0.45",
+    "mongodb": "^3.6.1",
     "mongoose": "^4.1.10",
     "morgan": "~1.6.1",
     "passport": "^0.3.0",
