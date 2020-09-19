@@ -5,7 +5,7 @@ http://www.eduonix.com/courses/Web-Development/Learn-Nodejs-by-building-10-Proje
 
 ___
 
-**Learn Node.js by Building 6 Projects (projects from this course)**
+**Learn Node.js by Building 6 Projects (original projects from this course)**  
 https://github.com/PacktPublishing/Learn-Node.js-by-Building-6-Projects
 
 ___
