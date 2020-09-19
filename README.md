@@ -5,6 +5,11 @@ http://www.eduonix.com/courses/Web-Development/Learn-Nodejs-by-building-10-Proje
 
 ___
 
+**Learn Node.js by Building 6 Projects (projects from this course)**
+https://github.com/PacktPublishing/Learn-Node.js-by-Building-6-Projects
+
+___
+
 
 I'm working on Linux with node version:
 
@@ -671,11 +676,13 @@ http://www.99lime.com/elements/
 ![Application](/img/10-2.png?raw=true)
 
 
+<br/>
+
 ---
+
+<br/>
 
 **Marley**
 
-<a href="https://jsdev.org">jsdev.org</a>
-
-Any questions on eng: <a href="https://jsdev.org/chat/">Telegram or Slack</a>  
-Любые вопросы на русском: <a href="https://jsdev.ru/chat/">Telegram or Slack</a>
+Any questions in english: <a href="https://jsdev.org/chat/">Telegram Chat</a>  
+Любые вопросы на русском: <a href="https://jsdev.ru/chat/">Телеграм чат</a>
