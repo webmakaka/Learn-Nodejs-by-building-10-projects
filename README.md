@@ -1,8 +1,9 @@
 # [Eduonix] Learn Nodejs by building 10 projects [2015, ENG]:  
 http://www.eduonix.com/courses/Web-Development/Learn-Nodejs-by-building-10-Projects-From-Scratch
 
-**UPDATABLE!**
+**CODE IS DEPRECATED AND MAY NOT WORKS WITH MODERN NODE.JS**
 
+**UPDATABLE!**
 ___
 
 **Learn Node.js by Building 6 Projects (original projects from this course)**  
