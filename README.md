@@ -1,7 +1,7 @@
 # [Eduonix] Learn Nodejs by building 10 projects [2015, ENG]:  
 http://www.eduonix.com/courses/Web-Development/Learn-Nodejs-by-building-10-Projects-From-Scratch
 
-**CODE IS DEPRECATED AND MAY NOT WORKS WITH MODERN NODE.JS**
+**CODE IS DEPRECATED AND MAY NOT WORK WITH MODERN NODE.JS**
 
 **UPDATABLE!**
 ___
