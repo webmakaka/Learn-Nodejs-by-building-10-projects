@@ -20,7 +20,7 @@
     "handlebars": "^4.0.3",
     "jade": "~1.11.0",
     "mongodb": "^2.0.45",
-    "mongoose": "^4.1.10",
+    "mongoose": "^5.8.11",
     "morgan": "~1.6.1",
     "passport": "^0.3.0",
     "passport-http": "^0.3.0",
