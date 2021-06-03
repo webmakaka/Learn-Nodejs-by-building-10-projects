@@ -20,7 +20,7 @@
     "express-messages": "^1.0.0",
     "kraken-js": "^1.0.3",
     "makara": "^2.0.3",
-    "mongodb": "^2.0.45",
+    "mongodb": "^3.6.1",
     "mongoose": "^4.1.10",
     "requirejs": "^2.1.20"
   },
