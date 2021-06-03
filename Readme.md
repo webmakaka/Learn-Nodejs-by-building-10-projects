@@ -57,7 +57,20 @@ http://localhost:3000/
 
 004 Nodemailer Setup
 
+<br/>
+
 To send emails you should be logged in gmail
+
+And need to specify if file contact.js
+
+```
+user: 'your_login@gmail.com',
+pass: 'your_password',
+```
+
+<br/>
+
+And agree in your google account sending emails
 
 ![Application](/img/02.png?raw=true)
 
