@@ -4,7 +4,18 @@ http://www.eduonix.com/courses/Web-Development/Learn-Nodejs-by-building-10-Proje
 
 **CODE IS DEPRECATED AND MAY NOT WORK WITH MODERN NODE.JS**
 
-**UPDATABLE! You can send Pull Requeset with updated code**
+1 - :heavy_check_mark:
+2 - :question:
+3 - :question:
+4 - :question:
+5 - :question:
+6 - :question:
+7 - :question:
+8 - :question:
+9 - :question:
+10 - :x:
+
+**UPDATABLE! You can send Pull Request with updated code**
 
 ---
 
